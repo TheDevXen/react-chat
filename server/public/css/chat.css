@@ -1,0 +1,36 @@
+.chat-area {
+    background-color: white;
+    height: 80%;
+    max-height: 80%;
+    border-top-right-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+    
+}
+.chat-contact-area {
+    background-color: white;
+    height: 80%;
+    max-height: 80%;
+    border-top-left-radius: 0.8em;
+    border-bottom-left-radius: 0.8em;
+}
+.chat {
+    box-shadow: 10px 10px 8px 5px #888888;
+}
+.chat ul {
+    list-style: none;
+    font-size: 1.3em;
+    text-align: center;
+}
+.chat ul li {
+    padding: 10px;
+    margin-top: 0.3em;
+    background-color: #888888;
+    border-radius: 0.8em;
+    text-transform: uppercase;
+}
+.chat ul li:hover {
+    background-color: darkviolet;
+}
+.selected {
+    background-color: aliceblue;
+}

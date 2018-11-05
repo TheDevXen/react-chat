@@ -13,14 +13,22 @@
     "semantic-ui-react": "^0.83.0",
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.1.1",
-    "universal-cookie": "^3.0.4"
+    "universal-cookie": "^3.0.4",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "sqlite3": "^4.0.3",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently --kill-others \"npm start\" \"node server\""
+    "dev": "concurrently --kill-others \"npm start\" \"node server/bin/www\""
   },
   "eslintConfig": {
     "extends": "react-app"

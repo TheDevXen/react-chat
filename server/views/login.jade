@@ -1,0 +1,17 @@
+extends layout
+block content
+    .container(style='padding: 0.8em;')
+        h1 Login
+        form(action='/login' method='post')
+            .form-group
+                label(for='username_t') Username
+                input.form-control#username_t(type='text', name='username' placeholder='Username')
+            .form-group
+                label(for='InputPassword1') Password
+                input.form-control#InputPassword1(type='password', name='password' placeholder='Password')
+            if msg
+                if success
+                    .alert.alert-success(role='alert')= msg
+                else
+                    .alert.alert-danger(role='alert')= msg
+            button.btn.btn-primary(type='submit') Login

@@ -1,0 +1,21 @@
+extends layout
+block content
+    .container(style='padding: 0.8em;')
+        h1 Register
+        form(action='/register' method='post')
+            .form-group
+                label(for='username_t') Username
+                input.form-control#username_t(type='text', name='username' placeholder='Username')
+            .form-group
+                label(for='InputEmail1') Email 
+                input.form-control#InputEmail1(type='email', name='email' aria-describedby='emailHelp', placeholder='Enter email')
+                small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+            .form-group
+                label(for='InputPassword1') Password
+                input.form-control#InputPassword1(type='password', name='password' placeholder='Password')
+            if msg
+                if success
+                    .alert.alert-success(role='alert')= msg
+                else
+                    .alert.alert-danger(role='alert')= msg
+            button.btn.btn-primary(type='submit') Submit
